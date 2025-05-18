@@ -1,7 +1,7 @@
 import { AIChatModelCard } from '@/types/aiModel';
 
 const huggingfaceChatModels: AIChatModelCard[] = [
-  {
+  /*{
     contextWindowTokens: 32_768,
     description: 'Mistral AI的指令调优模型',
     displayName: 'Mistral 7B Instruct v0.3',
@@ -14,7 +14,7 @@ const huggingfaceChatModels: AIChatModelCard[] = [
     displayName: 'Gemma 2 2B Instruct',
     id: 'google/gemma-2-2b-it',
     type: 'chat',
-  },
+  },*/
   {
     contextWindowTokens: 32_768,
     description: '阿里云通义千问团队开发的大型语言模型',
@@ -22,7 +22,7 @@ const huggingfaceChatModels: AIChatModelCard[] = [
     id: 'Qwen/Qwen2.5-72B-Instruct',
     type: 'chat',
   },
-  {
+  /*{
     contextWindowTokens: 32_768,
     description: 'Qwen2.5-Coder 专注于代码编写',
     displayName: 'Qwen 2.5 Coder 32B Instruct',
@@ -70,7 +70,7 @@ const huggingfaceChatModels: AIChatModelCard[] = [
     enabled: true,
     id: 'deepseek-ai/DeepSeek-R1',
     type: 'chat',
-  },
+  },*/
 ];
 
 export const allModels = [...huggingfaceChatModels];

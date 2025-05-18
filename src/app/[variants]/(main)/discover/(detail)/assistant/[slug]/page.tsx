@@ -15,7 +15,7 @@ import Header from './features/Header';
 import InfoSidebar from './features/InfoSidebar';
 import Temp from './features/Temp';
 
-// import ConversationExample from './features/ConversationExample';
+ import ConversationExample from './features/ConversationExample';
 // import SystemRole from './features/SystemRole';
 
 const getSharedProps = async (props: DiscoverPageProps) => {

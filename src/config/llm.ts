@@ -7,6 +7,7 @@ export const getLLMConfig = () => {
     server: {
       API_KEY_SELECT_MODE: z.string().optional(),
 
+      /*
       ENABLED_OPENAI: z.boolean(),
       OPENAI_API_KEY: z.string().optional(),
 
@@ -120,11 +121,12 @@ export const getLLMConfig = () => {
 
       ENABLED_HUNYUAN: z.boolean(),
       HUNYUAN_API_KEY: z.string().optional(),
+      */
 
       ENABLED_HUGGINGFACE: z.boolean(),
       HUGGINGFACE_API_KEY: z.string().optional(),
 
-      ENABLED_SENSENOVA: z.boolean(),
+     /* ENABLED_SENSENOVA: z.boolean(),
       SENSENOVA_API_KEY: z.string().optional(),
 
       ENABLED_XAI: z.boolean(),
@@ -159,11 +161,12 @@ export const getLLMConfig = () => {
 
       ENABLED_INFINIAI: z.boolean(),
       INFINIAI_API_KEY: z.string().optional(),
+      */
     },
     runtimeEnv: {
       API_KEY_SELECT_MODE: process.env.API_KEY_SELECT_MODE,
 
-      ENABLED_OPENAI: process.env.ENABLED_OPENAI !== '0',
+     /* ENABLED_OPENAI: process.env.ENABLED_OPENAI !== '0',
       OPENAI_API_KEY: process.env.OPENAI_API_KEY,
 
       ENABLED_AZURE_OPENAI: !!process.env.AZURE_API_KEY,
@@ -279,12 +282,12 @@ export const getLLMConfig = () => {
       AI21_API_KEY: process.env.AI21_API_KEY,
 
       ENABLED_HUNYUAN: !!process.env.HUNYUAN_API_KEY,
-      HUNYUAN_API_KEY: process.env.HUNYUAN_API_KEY,
+      HUNYUAN_API_KEY: process.env.HUNYUAN_API_KEY,    */
 
       ENABLED_HUGGINGFACE: !!process.env.HUGGINGFACE_API_KEY,
       HUGGINGFACE_API_KEY: process.env.HUGGINGFACE_API_KEY,
 
-      ENABLED_SENSENOVA: !!process.env.SENSENOVA_API_KEY,
+      /*ENABLED_SENSENOVA: !!process.env.SENSENOVA_API_KEY,
       SENSENOVA_API_KEY: process.env.SENSENOVA_API_KEY,
 
       ENABLED_XAI: !!process.env.XAI_API_KEY,
@@ -315,7 +318,7 @@ export const getLLMConfig = () => {
       COHERE_API_KEY: process.env.COHERE_API_KEY,
 
       ENABLED_INFINIAI: !!process.env.INFINIAI_API_KEY,
-      INFINIAI_API_KEY: process.env.INFINIAI_API_KEY,
+      INFINIAI_API_KEY: process.env.INFINIAI_API_KEY, */
     },
   });
 };

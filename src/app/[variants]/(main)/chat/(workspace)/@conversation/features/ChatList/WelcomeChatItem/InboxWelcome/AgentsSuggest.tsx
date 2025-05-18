@@ -53,6 +53,7 @@ const useStyles = createStyles(({ css, token, responsive }) => ({
 }));
 
 const AgentsSuggest = memo<{ mobile?: boolean }>(({ mobile }) => {
+  return null;
   const { t } = useTranslation('welcome');
   const locale = useGlobalStore(globalGeneralSelectors.currentLanguage);
   const [sliceStart, setSliceStart] = useState(0);
@@ -124,5 +125,7 @@ const AgentsSuggest = memo<{ mobile?: boolean }>(({ mobile }) => {
     </Flexbox>
   );
 });
+
+
 
 export default AgentsSuggest;

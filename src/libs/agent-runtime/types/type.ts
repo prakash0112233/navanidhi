@@ -22,7 +22,7 @@ export interface CreateChatCompletionOptions {
 }
 
 export enum ModelProvider {
-  Ai21 = 'ai21',
+  /*Ai21 = 'ai21',
   Ai360 = 'ai360',
   Anthropic = 'anthropic',
   Azure = 'azure',
@@ -37,9 +37,9 @@ export enum ModelProvider {
   Github = 'github',
   Google = 'google',
   Groq = 'groq',
-  Higress = 'higress',
+  Higress = 'higress',*/
   HuggingFace = 'huggingface',
-  Hunyuan = 'hunyuan',
+  /*Hunyuan = 'hunyuan',
   InfiniAI = 'infiniai',
   InternLM = 'internlm',
   Jina = 'jina',
@@ -72,7 +72,7 @@ export enum ModelProvider {
   XAI = 'xai',
   Xinference = 'xinference',
   ZeroOne = 'zeroone',
-  ZhiPu = 'zhipu',
+  ZhiPu = 'zhipu',*/
 }
 
 export type ModelProviderKey = Lowercase<keyof typeof ModelProvider>;

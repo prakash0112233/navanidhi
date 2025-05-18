@@ -82,13 +82,15 @@ export class DiscoverService {
       locale,
       assistant.meta.category || AssistantCategory.General,
     );
+  
 
-    assistant = {
+
+   /* assistant = {
       ...assistant,
       suggestions: categoryItems
         .filter((item) => item.identifier !== assistant.identifier)
         .slice(0, 5) as any,
-    };
+    };*/
 
     return assistant;
   };
@@ -194,12 +196,12 @@ export class DiscoverService {
       plugin.meta.category || PluginCategory.Tools,
     );
 
-    plugin = {
+    /*plugin = {
       ...plugin,
       suggestions: categoryItems
         .filter((item) => item.identifier !== plugin.identifier)
         .slice(0, 5) as any,
-    } as DiscoverPlugintem;
+    } as DiscoverPlugintem;*/
 
     return plugin;
   };
@@ -242,12 +244,12 @@ export class DiscoverService {
 
     if (!provider) return;
 
-    provider = {
+    /*provider = {
       ...provider,
       suggestions: list
         .filter((item) => item.identifier !== provider?.identifier)
         .slice(0, 5) as any,
-    };
+    };*/
 
     return merge(cloneDeep(DEFAULT_DISCOVER_PROVIDER_ITEM), provider) as DiscoverProviderItem;
   };
@@ -331,13 +333,13 @@ export class DiscoverService {
       ? await this.getModelCategory(locale, model.meta.category)
       : [];
 
-    model = {
+   /* model = {
       ...model,
       suggestions: categoryItems
         .filter((item) => item.identifier !== model?.identifier)
         .slice(0, 5) as any,
     };
-
+*/
     return merge(cloneDeep(DEFAULT_DISCOVER_MODEL_ITEM), model);
   };
 
